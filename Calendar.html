@@ -4,15 +4,16 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Suu Calendar</title>
+    <link rel="stylesheet" href="Calendar.css" />
   </head>
   <body>
-    <div>
-      <div>
-        <button>&lt;</button>
-        <h2>Current Month Year</h2>
-        <button>&gt;</button>
+    <div class="calendar-container">
+      <div class="calendar-header">
+        <button id="prev-month">&lt;</button>
+        <h2 id="current-month-year">Current Month Year</h2>
+        <button id="next-month">&gt;</button>
       </div>
-      <div>
+      <div class="weekdays">
         <span>Sun</span>
         <span>Mon</span>
         <span>Tue</span>
@@ -21,6 +22,8 @@
         <span>Fri</span>
         <span>Sat</span>
       </div>
+      <div class="calendar-grid" id="calendar-grid"></div>
     </div>
+    <script src="Calendar.js"></script>
   </body>
 </html>
